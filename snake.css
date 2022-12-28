@@ -1,0 +1,31 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-color: silver;
+}
+.container {
+  text-align: center;
+}
+
+#board {
+  justify-content: center;
+  border: 3px solid;
+  width: 500px;
+  height: 500px;
+}
+
+.score {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.resetButton {
+  font-size: 22px;
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
