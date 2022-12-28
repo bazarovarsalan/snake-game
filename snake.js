@@ -52,9 +52,14 @@ function createFood() {
 
 function drawFood() {
   context.fillStyle = "red";
-  context.fillRect(foodX, foodY, unitSize, unitSize);
+  let x = foodX + unitSize / 2;
+  let y = foodY + unitSize / 2;
+  context.beginPath();
+  context.ellipse(x, y, unitSize / 2, unitSize / 2, 0, 0, Math.PI * 2);
+  context.fill();
+  context.stroke();
 }
-drawFood();
+
 function moveSnake() {
   if (running) {
     const headSnake = { x: snake[0].x + xVelocity, y: snake[0].y + yVelocity };
