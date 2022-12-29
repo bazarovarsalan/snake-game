@@ -105,9 +105,9 @@ function direction(event) {
 }
 
 function checkGameOver() {
-  if (snake[0].x <= 0 || snake[0].x >= w) {
+  if (snake[0].x < 0 || snake[0].x > w) {
     running = false;
-  } else if (snake[0].y <= 0 || snake[0].y >= h) {
+  } else if (snake[0].y < 0 || snake[0].y > h) {
     running = false;
   }
 
